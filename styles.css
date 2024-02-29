@@ -47,7 +47,17 @@ nav ul li a:hover{
     transition: .4s;
 
 }
+.content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
+.content img {
+    width: 700px; /* Adjust according to your image */
+    margin-right: 20px; /* Adjust the margin as needed */
+    height: auto;
+}
 .delet{
     margin-left: 8%;
     margin-top: 15%;
@@ -62,25 +72,24 @@ span{
     color: orchid;
 }
 
-.delet p{
-    color: black;
-    line-height: 24px;
-    letter-spacing: 1px;
+.container {
+    display: flex;
+    align-items: center; /* Align items vertically */
 }
 
-.delet a{
-    background: color #212121; ;
-    padding: 10px 18px;
-    text-decoration: none;
-    font-weight: bold;
-    color:#fff;
-    display: inline-block;
-    margin: 30px 0;
-    border-radius: 30px;
+.image {
+    flex: 0 0 auto; /* Don't allow image to grow */
+    margin-right: 20px; /* Adjust the margin as needed */
 }
-.delet  a:hover{
-   background: black;
+
+.image img {
+    max-width: 100%; /* Ensure image does not exceed container width */
 }
+
+.delet {
+    flex: 1; /* Allow content to grow */
+}
+
 .about{
     width: 100%;
     padding: 50px 0;
@@ -235,24 +244,6 @@ footer p:nth-child(2){
     width: 500px;
     text-align: center;
     line-height: 26px;
-}
-.social{
-    display: flex;
-}
-.social a{
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    margin: 22px 10px;
-    text-decoration: none;
-    font-size: 20px;
-}
-.social a:hover{
-    transform: scale(1.3);
-    transition: .3s;
 }
 .end{
     position: absolute;
